@@ -1,0 +1,17 @@
+C:\Mypo\Mypo\Mypo.Datos\bin\Debug\Mypo.Datos.dll
+C:\Mypo\Mypo\Mypo.Datos\bin\Debug\Mypo.Datos.pdb
+C:\Mypo\Mypo\Mypo.Datos\bin\Debug\Mypo.Entidades.dll
+C:\Mypo\Mypo\Mypo.Datos\bin\Debug\Mypo.Entidades.pdb
+C:\Mypo\Mypo\Mypo.Datos\obj\Debug\Mypo.Datos.csprojAssemblyReference.cache
+C:\Mypo\Mypo\Mypo.Datos\obj\Debug\Mypo.Datos.csproj.CopyComplete
+C:\Mypo\Mypo\Mypo.Datos\obj\Debug\Mypo.Datos.dll
+C:\Mypo\Mypo\Mypo.Datos\obj\Debug\Mypo.Datos.pdb
+C:\Users\Ivan\Desktop\Proyecto\MYPO\Mypo\Mypo.Datos\bin\Debug\Mypo.Datos.dll
+C:\Users\Ivan\Desktop\Proyecto\MYPO\Mypo\Mypo.Datos\bin\Debug\Mypo.Datos.pdb
+C:\Users\Ivan\Desktop\Proyecto\MYPO\Mypo\Mypo.Datos\obj\Debug\Mypo.Datos.csproj.CoreCompileInputs.cache
+C:\Users\Ivan\Desktop\Proyecto\MYPO\Mypo\Mypo.Datos\obj\Debug\Mypo.Datos.csproj.CopyComplete
+C:\Users\Ivan\Desktop\Proyecto\MYPO\Mypo\Mypo.Datos\obj\Debug\Mypo.Datos.dll
+C:\Users\Ivan\Desktop\Proyecto\MYPO\Mypo\Mypo.Datos\obj\Debug\Mypo.Datos.pdb
+C:\Users\Ivan\Desktop\Proyecto\MYPO\Mypo\Mypo.Datos\bin\Debug\Mypo.Model.dll
+C:\Users\Ivan\Desktop\Proyecto\MYPO\Mypo\Mypo.Datos\bin\Debug\Mypo.Model.pdb
+C:\Users\Ivan\Desktop\Proyecto\MYPO\Mypo\Mypo.Datos\obj\Debug\Mypo.Datos.csprojAssemblyReference.cache

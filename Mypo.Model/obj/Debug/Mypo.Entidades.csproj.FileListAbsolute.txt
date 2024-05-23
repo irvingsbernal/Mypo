@@ -1,0 +1,11 @@
+C:\Mypo\Mypo\Mypo.Entidades\bin\Debug\Mypo.Entidades.dll
+C:\Mypo\Mypo\Mypo.Entidades\bin\Debug\Mypo.Entidades.pdb
+C:\Mypo\Mypo\Mypo.Entidades\obj\Debug\Mypo.Entidades.csprojAssemblyReference.cache
+C:\Mypo\Mypo\Mypo.Entidades\obj\Debug\Mypo.Entidades.dll
+C:\Mypo\Mypo\Mypo.Entidades\obj\Debug\Mypo.Entidades.pdb
+C:\Users\Ivan\Desktop\Proyecto\MYPO\Mypo\Mypo.Entidades\obj\Debug\Mypo.Entidades.csprojAssemblyReference.cache
+C:\Users\Ivan\Desktop\Proyecto\MYPO\Mypo\Mypo.Entidades\obj\Debug\Mypo.Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Ivan\Desktop\Proyecto\MYPO\Mypo\Mypo.Entidades\bin\Debug\Mypo.Model.dll
+C:\Users\Ivan\Desktop\Proyecto\MYPO\Mypo\Mypo.Entidades\bin\Debug\Mypo.Model.pdb
+C:\Users\Ivan\Desktop\Proyecto\MYPO\Mypo\Mypo.Entidades\obj\Debug\Mypo.Model.dll
+C:\Users\Ivan\Desktop\Proyecto\MYPO\Mypo\Mypo.Entidades\obj\Debug\Mypo.Model.pdb

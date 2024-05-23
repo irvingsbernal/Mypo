@@ -1,0 +1,11 @@
+C:\Users\Ivan\Desktop\Proyecto\MYPO\Mypo\Mypo.Entidades\bin\Debug\Mypo.Model.dll
+C:\Users\Ivan\Desktop\Proyecto\MYPO\Mypo\Mypo.Entidades\bin\Debug\Mypo.Model.pdb
+C:\Users\Ivan\Desktop\Proyecto\MYPO\Mypo\Mypo.Entidades\obj\Debug\Mypo.Model.csproj.CoreCompileInputs.cache
+C:\Users\Ivan\Desktop\Proyecto\MYPO\Mypo\Mypo.Entidades\obj\Debug\Mypo.Model.dll
+C:\Users\Ivan\Desktop\Proyecto\MYPO\Mypo\Mypo.Entidades\obj\Debug\Mypo.Model.pdb
+C:\Users\Ivan\Desktop\Proyecto\MYPO\Mypo\Mypo.Model\bin\Debug\Mypo.Model.dll
+C:\Users\Ivan\Desktop\Proyecto\MYPO\Mypo\Mypo.Model\bin\Debug\Mypo.Model.pdb
+C:\Users\Ivan\Desktop\Proyecto\MYPO\Mypo\Mypo.Model\obj\Debug\Mypo.Model.csproj.CoreCompileInputs.cache
+C:\Users\Ivan\Desktop\Proyecto\MYPO\Mypo\Mypo.Model\obj\Debug\Mypo.Model.dll
+C:\Users\Ivan\Desktop\Proyecto\MYPO\Mypo\Mypo.Model\obj\Debug\Mypo.Model.pdb
+C:\Users\Ivan\Desktop\Proyecto\MYPO\Mypo\Mypo.Model\obj\Debug\Mypo.Model.csprojAssemblyReference.cache

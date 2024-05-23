@@ -1,0 +1,479 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{09F1D4AF-2ED7-46F8-A028-60A4C0161416}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Mypo.View</RootNamespace>
+    <AssemblyName>Mypo.View</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BarcodeStandard">
+      <HintPath>Libs\BarcodeLib.2.2.3\lib\netstandard2.0\BarcodeStandard.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common">
+      <HintPath>Libs\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1400.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design">
+      <HintPath>Libs\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1400.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms">
+      <HintPath>Libs\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1400.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing.Common">
+      <HintPath>Libs\System.Drawing.Common.4.5.1\lib\net461\System.Drawing.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administrador\Reportes\Comprobante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\Reportes\Comprobante.Designer.cs">
+      <DependentUpon>Comprobante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\Reportes\DataSetMypo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetMypo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\ViewCategoria\Categorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\ViewCategoria\Categorias.Designer.cs">
+      <DependentUpon>Categorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\ViewCategoria\AccionCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\ViewCategoria\AccionCategoria.Designer.cs">
+      <DependentUpon>AccionCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\ViewCliente\AccionCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\ViewCliente\AccionCliente.Designer.cs">
+      <DependentUpon>AccionCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\ViewCliente\Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\ViewCliente\Clientes.Designer.cs">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\ViewEntrada\AccionEntrada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\ViewEntrada\AccionEntrada.Designer.cs">
+      <DependentUpon>AccionEntrada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\ViewEntrada\Entradas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\ViewEntrada\Entradas.Designer.cs">
+      <DependentUpon>Entradas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\ViewIngreso\AccionIngreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\ViewIngreso\AccionIngreso.Designer.cs">
+      <DependentUpon>AccionIngreso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\ViewIngreso\BuscarProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\ViewIngreso\BuscarProductos.Designer.cs">
+      <DependentUpon>BuscarProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\ViewProductos\DetalleDeProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\ViewProductos\DetalleDeProducto.Designer.cs">
+      <DependentUpon>DetalleDeProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\ViewReporteVentas\DetalleVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\ViewReporteVentas\DetalleVenta.Designer.cs">
+      <DependentUpon>DetalleVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\ViewReporteVentas\ReporteVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\ViewReporteVentas\ReporteVentas.Designer.cs">
+      <DependentUpon>ReporteVentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\ViewVenta\BuscarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\ViewVenta\BuscarCliente.Designer.cs">
+      <DependentUpon>BuscarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\ViewIngreso\DetalleIngreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\ViewIngreso\DetalleIngreso.Designer.cs">
+      <DependentUpon>DetalleIngreso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\ViewIngreso\Ingresos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\ViewIngreso\Ingresos.Designer.cs">
+      <DependentUpon>Ingresos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\ViewPreventa\CardProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\ViewPreventa\CardProducto.Designer.cs">
+      <DependentUpon>CardProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\ViewPreventa\DetalleProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\ViewPreventa\DetalleProducto.Designer.cs">
+      <DependentUpon>DetalleProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\ViewPreventa\Preventa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\ViewPreventa\Preventa.Designer.cs">
+      <DependentUpon>Preventa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\ViewProductos\AccionProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\ViewProductos\AccionProducto.Designer.cs">
+      <DependentUpon>AccionProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\ViewProductos\BuscarProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\ViewProductos\BuscarProductos.Designer.cs">
+      <DependentUpon>BuscarProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\ViewProductos\Productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\ViewProductos\Productos.Designer.cs">
+      <DependentUpon>Productos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\ViewProductos\Recetario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\ViewProductos\Recetario.Designer.cs">
+      <DependentUpon>Recetario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\ViewProveedor\AccionProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\ViewProveedor\AccionProveedor.Designer.cs">
+      <DependentUpon>AccionProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\ViewProveedor\Proveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\ViewProveedor\Proveedores.Designer.cs">
+      <DependentUpon>Proveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\ViewRoles\AccionRol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\ViewRoles\AccionRol.Designer.cs">
+      <DependentUpon>AccionRol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\ViewRoles\Roles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\ViewRoles\Roles.Designer.cs">
+      <DependentUpon>Roles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\ViewUsuarios\AccionUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\ViewUsuarios\AccionUsuario.Designer.cs">
+      <DependentUpon>AccionUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\ViewUsuarios\Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\ViewUsuarios\Usuarios.Designer.cs">
+      <DependentUpon>Usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\ViewVenta\AccionVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\ViewVenta\AccionVenta.Designer.cs">
+      <DependentUpon>AccionVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\ViewVenta\BuscarProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\ViewVenta\BuscarProductos.Designer.cs">
+      <DependentUpon>BuscarProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\ViewIngreso\BuscarProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\ViewIngreso\BuscarProveedor.Designer.cs">
+      <DependentUpon>BuscarProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\ViewVenta\DetalleVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\ViewVenta\DetalleVenta.Designer.cs">
+      <DependentUpon>DetalleVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\ViewVenta\Ventas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\ViewVenta\Ventas.Designer.cs">
+      <DependentUpon>Ventas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCategoria.Designer.cs">
+      <DependentUpon>FormCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPrincipal.Designer.cs">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SignIn\Bienvenida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignIn\Bienvenida.Designer.cs">
+      <DependentUpon>Bienvenida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignIn\SignIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignIn\SignIn.Designer.cs">
+      <DependentUpon>SignIn.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Administrador\Reportes\Comprobante.resx">
+      <DependentUpon>Comprobante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\ViewCategoria\Categorias.resx">
+      <DependentUpon>Categorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\ViewCategoria\AccionCategoria.resx">
+      <DependentUpon>AccionCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\ViewCliente\AccionCliente.resx">
+      <DependentUpon>AccionCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\ViewCliente\Clientes.resx">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\ViewEntrada\AccionEntrada.resx">
+      <DependentUpon>AccionEntrada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\ViewEntrada\Entradas.resx">
+      <DependentUpon>Entradas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\ViewIngreso\AccionIngreso.resx">
+      <DependentUpon>AccionIngreso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\ViewIngreso\BuscarProductos.resx">
+      <DependentUpon>BuscarProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\ViewProductos\DetalleDeProducto.resx">
+      <DependentUpon>DetalleDeProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\ViewReporteVentas\DetalleVenta.resx">
+      <DependentUpon>DetalleVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\ViewReporteVentas\ReporteVentas.resx">
+      <DependentUpon>ReporteVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\ViewVenta\BuscarCliente.resx">
+      <DependentUpon>BuscarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\ViewIngreso\DetalleIngreso.resx">
+      <DependentUpon>DetalleIngreso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\ViewIngreso\Ingresos.resx">
+      <DependentUpon>Ingresos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\ViewPreventa\CardProducto.resx">
+      <DependentUpon>CardProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\ViewPreventa\DetalleProducto.resx">
+      <DependentUpon>DetalleProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\ViewPreventa\Preventa.resx">
+      <DependentUpon>Preventa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\ViewProductos\AccionProducto.resx">
+      <DependentUpon>AccionProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\ViewProductos\BuscarProductos.resx">
+      <DependentUpon>BuscarProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\ViewProductos\Productos.resx">
+      <DependentUpon>Productos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\ViewProductos\Recetario.resx">
+      <DependentUpon>Recetario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\ViewProveedor\AccionProveedor.resx">
+      <DependentUpon>AccionProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\ViewProveedor\Proveedores.resx">
+      <DependentUpon>Proveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\ViewRoles\AccionRol.resx">
+      <DependentUpon>AccionRol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\ViewRoles\Roles.resx">
+      <DependentUpon>Roles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\ViewUsuarios\AccionUsuario.resx">
+      <DependentUpon>AccionUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\ViewUsuarios\Usuarios.resx">
+      <DependentUpon>Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\ViewVenta\AccionVenta.resx">
+      <DependentUpon>AccionVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\ViewVenta\BuscarProductos.resx">
+      <DependentUpon>BuscarProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\ViewIngreso\BuscarProveedor.resx">
+      <DependentUpon>BuscarProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\ViewVenta\DetalleVenta.resx">
+      <DependentUpon>DetalleVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\ViewVenta\Ventas.resx">
+      <DependentUpon>Ventas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCategoria.resx">
+      <DependentUpon>FormCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPrincipal.resx">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SignIn\Bienvenida.resx">
+      <DependentUpon>Bienvenida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignIn\SignIn.resx">
+      <DependentUpon>SignIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\Reportes\ComprobanteVenta.rdlc" />
+    <None Include="Administrador\Reportes\DataSetMypo.xsc">
+      <DependentUpon>DataSetMypo.xsd</DependentUpon>
+    </None>
+    <None Include="Administrador\Reportes\DataSetMypo.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetMypo.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Administrador\Reportes\DataSetMypo.xss">
+      <DependentUpon>DataSetMypo.xsd</DependentUpon>
+    </None>
+    <None Include="Administrador\Reportes\ReporteProdutos.rdlc" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Mypo.Controller\Mypo.Controller.csproj">
+      <Project>{fc3cfbda-e2dd-49c1-9c2c-c419c06655bd}</Project>
+      <Name>Mypo.Controller</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mypo.Model\Mypo.Model.csproj">
+      <Project>{c4917850-03bd-4b7b-902a-1925482eec1e}</Project>
+      <Name>Mypo.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\compra_m.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ventas_m.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Resources\key.png" />
+    <Content Include="Resources\mypo.jpg" />
+    <Content Include="Resources\user.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
